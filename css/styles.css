@@ -64,7 +64,7 @@ color: currentColor;}
     border-bottom: 1px solid #e7e9fc
 }
 
-.header .container {
+.header-div {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -221,8 +221,6 @@ padding-left: 0;}
     background-color: #F4F4FD;
 padding: 120px 0}
 
-.our-team-container {background-color: #F4F4FD;
-}
 
 .our-team-title {color: #2E2F42;
     text-align: center;
