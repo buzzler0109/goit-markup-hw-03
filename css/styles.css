@@ -52,14 +52,15 @@ a {text-decoration: none;
 color: currentColor;}
 
 .container {
-    max-width: 1440px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
     outline: 2px solid red;
 }
 
 /*=============== HEADER =================*/
+
+.container .sectoin {border-bottom: 1px solid #e7e9fc}
 
 .header .container {display: flex;
         align-items: center;
@@ -73,7 +74,8 @@ color: currentColor;}
                 justify-content: space-around;
 }
 
-.contacts-list {display: flex;
+.contacts-list {
+    display: flex;
     align-items: center;
     gap: 40px;
 }
@@ -99,7 +101,8 @@ margin-right: 76px;}
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.32px;}
+    letter-spacing: 0.32px;
+            padding: 24px 0;}
 
 .nav-list-item:hover,
 .nav-list-item:focus {color: #404bbf}
@@ -121,10 +124,11 @@ margin-right: 76px;}
  /*=============== SECTION1 =================*/
 
 .main-section {background-color: #2E2F42;
+    padding-bottom: 188px;
+        padding-top: 188px;
 }
 
-.main-container {padding-bottom: 188px;
-    padding-top: 188px;}
+.main-container {}
 
 .main-title {color: #FFF;
     background-color: #2E2F42;
@@ -151,6 +155,7 @@ border: 0;
 border-radius: 4px;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 margin: 0 auto;
+min-width: 169px;
 }
 
 .order-button:hover, 
@@ -160,11 +165,14 @@ margin: 0 auto;
 
  /*=============== ABOUT US =================*/
 
- .about-us-container {padding: 120px 156px;}
+ .about-us-section {padding: 120px 0;}
+ 
+ .about-us-container {}
 
  .about-us-list {
     display: flex;
     justify-content: space-around;
+    gap: 24px;
  }
 
  .about-us-list-item {
@@ -190,7 +198,8 @@ padding-left: 0;}
  /*=============== OUR TEAM =================*/
 
 .our-team-section {
-    background-color: #F4F4FD;}
+    background-color: #F4F4FD;
+padding: 120px 0}
 
 .our-team-container {background-color: #F4F4FD;
 }
@@ -207,6 +216,7 @@ padding-left: 0;}
 
 .our-team-list {display: flex;
 justify-content: space-around;
+gap: 24px;
 padding: 0 156px 120px 156px;}
 
 .our-team-list-item {background-color: #FFFFFF;
@@ -216,6 +226,11 @@ overflow: hidden;
 width: calc((100% - 72px) / 4);
 }
 
+.team-card {
+    padding: 32px 0;
+
+}
+
 .our-team-names {color: #2E2F42;
     background-color: #FFF;
     text-align: center;
@@ -223,7 +238,6 @@ width: calc((100% - 72px) / 4);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.4px;
-padding-top: 32px;
 margin-bottom: 8px;}
 
 .our-team-position {
@@ -232,11 +246,13 @@ margin-bottom: 8px;}
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-padding-bottom: 32px;}
+}
 
 /*=========================================*/
 
  /*=============== PORTFOLIO =================*/
+
+.portfolio-section {padding: 120px 0;}
 
 .our-portfolio {color: #2E2F42;
     text-align: center;
@@ -257,28 +273,33 @@ padding: 0 156px 152px 156px;
 .portfolio-list-item {
     overflow: hidden;
     width: calc((100% - 48px) / 3);
-border: 1px solid #E7E9FC}
+}
 
+.portfolio-card {
+    padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
+}
 
 .our-portfolio-title {color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.4px;
-    padding: 32px 16px 0 16px;
 margin-bottom: 8px;}
 
 .our-portfolio-item {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.32px;
-padding: 0 16px 32px 16px;}
+    letter-spacing: 0.32px;}
 
 /*=========================================*/
 
  /*=============== FOOTER =================*/
 
-.footer-section {background-color: #2E2F42;}
+.footer-section {
+    background-color: #2E2F42;
+padding: 100px 0;}
 
 .web-footer {
     color: #4D5AE5;
@@ -288,9 +309,9 @@ padding: 0 16px 32px 16px;}
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    display: block;
-    padding: 102px 1169px 0 156px;
-    margin-bottom: 18px;
+    display: inline-block;
+    padding-left: 156px;
+    margin-bottom: 16px;
 }
 
 .studio-footer {
@@ -302,8 +323,9 @@ padding: 0 16px 32px 16px;}
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-padding: 0 1020px 100px 156px;}
-
+    max-width: 264px;
+    margin: 0;
+}
 /*=========================================*/
 
 
