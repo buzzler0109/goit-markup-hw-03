@@ -67,8 +67,6 @@ color: currentColor;}
 .header-div {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .nav {
@@ -102,7 +100,6 @@ color: currentColor;}
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-right: 332px;
 }
 
 .nav-list-item {
